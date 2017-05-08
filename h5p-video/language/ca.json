@@ -1,0 +1,123 @@
+{
+  "semantics": [
+    {
+      "label": "Video sources",
+      "description": "To ensure that the video works in all browsers you should add both WebM and MP4 formatted sources."
+    },
+    {
+      "label": "Visuals",
+      "fields": [
+        {
+          "label": "Poster image"
+        },
+        {
+          "label": "Fit video player to use all available space",
+          "description": "If not set the video player will have the same aspect ratio as the video."
+        },
+        {
+          "label": "Show video player controls",
+          "description": "Add controls to the video player. This allows users to play, pause, etc."
+        }
+      ]
+    },
+    {
+      "label": "Playback",
+      "fields": [
+        {
+          "label": "Auto-play video",
+          "description": "Start playing the video automatically. May not work on mobile devices."
+        },
+        {
+          "label": "Loop video",
+          "description": "Automatically start the video over again when it ends."
+        }
+      ]
+    },
+    {
+      "label": "Video localization",
+      "fields": [
+        {
+          "label": "Name",
+          "description": "Helps identify content of this type."
+        },
+        {
+          "label": "Loading"
+        },
+        {
+          "label": "No players found"
+        },
+        {
+          "label": "No sources"
+        },
+        {
+          "label": "Aborted"
+        },
+        {
+          "label": "Network failure"
+        },
+        {
+          "label": "Cannot decode video source"
+        },
+        {
+          "label": "Format not supported"
+        },
+        {
+          "label": "Media encrypted"
+        },
+        {
+          "label": "Unknown error"
+        },
+        {
+          "label": "Invalid YouTube ID"
+        },
+        {
+          "label": "Unkown YouTube ID"
+        },
+        {
+          "label": "Restricted YouTube video"
+        }
+      ]
+    },
+    {
+      "label": "Accessibility",
+      "fields": [
+        {
+          "label": "Add video track",
+          "entity": "Track",
+          "field": {
+            "label": "Track",
+            "fields": [
+              {
+                "label": "Track label"
+              },
+              {
+                "label": "Type kind, refer to <a target='_blank' href=https://html.spec.whatwg.org/multipage/embedded-content.html#the-track-element>HTML living standard</a>",
+                "options": [
+                  {
+                    "label": "Subtitles"
+                  },
+                  {
+                    "label": "Captions"
+                  },
+                  {
+                    "label": "Descriptions"
+                  },
+                  {
+                    "label": "Chapters"
+                  }
+                ]
+              },
+              {
+                "label": "Source language, must be defined for subtitles",
+                "description": "Must be a valid BCP 47 language tag. If the kind attribute is set to subtitles, then srclang must be defined."
+              },
+              {
+                "label": "Track file (WebVTT)"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
